@@ -1,0 +1,15 @@
+.intro {
+  --flow-space: 0.5rem;
+
+  > * {
+    max-width: 28ch;
+  }
+
+  .heading {
+    max-width: 10ch;
+  }
+
+  p {
+    @include apply-utility('weight', 'bold');
+  }
+}

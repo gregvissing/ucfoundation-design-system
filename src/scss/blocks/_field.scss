@@ -1,0 +1,38 @@
+.field {
+  color: get-color('secondary');
+
+  label {
+    @include apply-utility('weight', 'bold');
+
+    &::after {
+      content: '\A';
+      white-space: pre;
+    }
+  }
+
+  input,
+  textarea {
+    display: inline-block;
+    line-height: 1.1;
+    font: inherit;
+    border: $stroke-width solid get-color('primary');
+    background: get-color('slate');
+    color: get-color('light');
+    padding: 0.8rem;
+    min-width: 15rem;
+
+    &:focus {
+      outline: $stroke-width solid get-color('light');
+      outline-offset: -$stroke-width;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    max-width: 40rem;
+
+    &:not([rows]) {
+      min-height: 10rem;
+    }
+  }
+}

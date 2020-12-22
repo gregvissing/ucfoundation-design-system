@@ -1,27 +1,30 @@
 {
-  "context": {
-    "previewBG": "bg-dark",
-    "items": [
-      {
-        "text": "Home",
-        "url": "#"
-      },
-      {
-        "text": "Work",
-        "url": "#"
-      },
-      {
-        "text": "About",
-        "url": "#"
-      },
-      {
-        "text": "Studio",
-        "url": "#"
-      },
-      {
-        "text": "Contact",
-        "url": "#"
-      }
-    ]
-  }
+    "context": {
+        "previewBG": "bg-light",
+        "items": [{
+                "text": "Campaign",
+                "url": "#"
+            },
+            {
+                "text": "Impact",
+                "url": "#"
+            },
+            {
+                "text": "News",
+                "url": "#"
+            },
+            {
+                "text": "About",
+                "url": "#"
+            },
+            {
+                "text": "Search",
+                "url": "#"
+            },
+            {
+                "text": "Give Now",
+                "url": "#"
+            }
+        ]
+    }
 }

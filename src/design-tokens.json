@@ -2,11 +2,14 @@
     "colors": {
         "dark": "#222222",
         "light": "#f8f8f8",
-        "primary": "#fdd110",
+        "primary": "#e00122",
         "secondary": "#ea1c5c",
         "secondary-shade": "#da0044",
         "tertiary": "#55dde0",
-        "slate": "#2e2e2e"
+        "slate": "#2e2e2e",
+        "error": "#dc3545",
+        "white": "#ffffff",
+        "black": "#000000"
     },
     "fonts": {
         "base": "'Open Sans', sans-serif",

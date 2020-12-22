@@ -1,0 +1,42 @@
+table.taCenter table,
+td.taCenter table {
+    margin: 0 auto;
+}
+
+table.w100p.taCenter table.taCenter {
+    margin: 0 auto 0 0;
+}
+
+table[id*="_tbl"],
+.LoginFormTable {
+    width: 100%;
+}
+
+.LoginFormTitle span[id*="_lblLoginTitle"] {
+    display: block;
+    // font: normal 100%;
+    font-size: 1.25em !important;
+}
+
+.LoginFormTitle span[id*="_lblRegRequestTitle"] {
+    display: block;
+    margin: 0 0 .5em;
+}
+
+.LoginSectionHeader span[id*="_lblAccountInfo"] {
+    display: block;
+    margin: 0 0 .5em;
+}
+
+.LoginFormTitle .LoginFieldCaption {
+    width: 25%;
+}
+
+.BBFormValidatorSummary.LoginFormValidatorSummary li {
+    color: get-color('error');
+}
+
+span[id*='_lblLoginTitle'] {
+    @include apply-utility('font', 'serif');
+    font-size: get-size('900');
+}

@@ -1,14 +1,18 @@
 {
-  "context": {
-    "title": "We make cool ads",
-    "summary": "Whether you’re a tiny startup or a huge corporation: we’ve got your back, here at aperture.",
-    "button": {
-      "text": "Check out our stuff",
-      "url": "#"
-    },
-    "image": {
-      "src": "https://source.unsplash.com/1xnwIPb4-RE/1200x800",
-      "alt": "A billboard on a busy street reads: 'Dear London, creativity is a way of dreaming. Let’s keep dreaming'"
+    "context": {
+        "title": "We make cool ads",
+        "summary": "Whether you’re a tiny startup or a huge corporation: we’ve got your back, here at aperture.",
+        "button": {
+            "text": "Campaign Info",
+            "url": "#"
+        },
+        "secondarybutton": {
+            "text": "Watch Video",
+            "url": "#"
+        },
+        "image": {
+            "src": "https://foundation.uc.edu/image/_2019-redesign/homepage-hero-images/Annual-Report_hero-bg.jpg",
+            "alt": "A billboard on a busy street reads: 'Dear London, creativity is a way of dreaming. Let’s keep dreaming'"
+        }
     }
-  }
 }

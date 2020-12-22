@@ -1,0 +1,9 @@
+{
+    "context": {
+        "helpletcontent": "Please enter your username and password below. If you do not have a username and password, click \"New user registration\" to register.",
+        "errorhelp": "The following error(s) must be corrected before continuing:",
+        "errortext": "Please enter a valid Username and Password.",
+        "title": "Hello, I am an intro",
+        "summary": "I am a summary that supports the intro. Donec id elit non mi porta gravida at eget metus."
+    }
+}

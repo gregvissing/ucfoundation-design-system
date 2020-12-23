@@ -1,6 +1,6 @@
 .button {
     display: inline-block;
-    padding: 1rem 2.6rem 1.1rem 2.6rem;
+    padding: 0.8rem 2.6rem .9rem 2.6rem;
     border: $stroke-width solid get-color('dark');
     color: get-color('light');
     font: inherit;
@@ -14,7 +14,7 @@
     @include apply-utility('weight', 'black');
     /// Only applies background where utility is not present
     &:not([class*='bg-']) {
-        background: get-color('secondary');
+        background: get-color('primary');
     }
     /// We absolutely want this hover state *regardless* of what
     /// tokens are present at any given time. This is to ensure consistency

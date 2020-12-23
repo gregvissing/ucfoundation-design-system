@@ -1,17 +1,39 @@
 {
-  "context": {
-    "previewBG": "bg-dark",
-    "label": "A text field",
-    "type": "text",
-    "id": "my-lovely-field"
-  },
-  "variants": [
-    {
-      "name": "With textarea",
-      "context": {
-        "label": "A lovely textarea",
-        "type": "textarea"
-      }
-    }
-  ]
+    "context": {
+        "previewBG": "bg-white",
+        "label": "A text field",
+        "type": "text",
+        "id": "my-lovely-field"
+    },
+    "variants": [{
+        "name": "Textarea",
+        "context": {
+            "label": "Textarea",
+            "type": "textarea"
+        }
+    }, {
+        "name": "Checkbox",
+        "context": {
+            "label": "Checkbox",
+            "type": "checkbox"
+        }
+    }, {
+        "name": "Radio Button",
+        "context": {
+            "label": "Radio button",
+            "type": "radio"
+        }
+    }, {
+        "name": "Select",
+        "context": {
+            "label": "Select",
+            "type": "select"
+        }
+    }, {
+        "name": "Search",
+        "context": {
+            "label": "Search",
+            "type": "search"
+        }
+    }]
 }

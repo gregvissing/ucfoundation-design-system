@@ -12,8 +12,14 @@ h1,
 h2,
 h3,
 h4 {
+    @include apply-utility('font', 'serif');
     line-height: 1.1;
     max-width: 30ch;
+    letter-spacing: 0.3px;
+}
+
+.font-serif {
+    letter-spacing: 0.3px;
 }
 
 a,
@@ -30,6 +36,20 @@ svg {
     width: 1em;
     height: 1em;
     display: inline-block;
+}
+
+label {
+    &.required {
+        padding-left: 1.25em;
+        position: relative;
+        &:before {
+            content: '*';
+            position: absolute;
+            left: 0;
+            font-size: 1em;
+            color: get-color('error')
+        }
+    }
 }
 
 // Interactive states
@@ -53,7 +73,10 @@ a:hover {
 @import 'blocks/brand';
 @import 'blocks/button';
 @import 'blocks/field';
-@import 'blocks/heading';
+@import 'blocks/checkbox';
+@import 'blocks/radiobutton';
+@import 'blocks/select';
+@import 'blocks/search';
 @import 'blocks/logos';
 @import 'blocks/media';
 @import 'blocks/nav';

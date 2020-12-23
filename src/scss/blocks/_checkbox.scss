@@ -1,0 +1,327 @@
+// checkbox-alt.css
+.s-cb input {
+    -moz-appearance: none;
+    -o-apperance: none;
+    -webkit-appearance: none;
+    background: none;
+    /* ios */
+    border-radius: 4px;
+    border: 2px solid #666;
+    font-size: inherit;
+    height: 2em;
+    line-height: 1;
+    margin: .5em 0 0 0;
+    position: relative;
+    vertical-align: bottom;
+    width: 2em;
+}
+
+.s-cb input:before,
+.s-cb input:after {
+    content: "";
+    position: absolute;
+    transition: transform .2s ease-in-out;
+}
+
+.s-cb input:before,
+.s-cb input:after {
+    border-bottom: 3px solid rgba(34, 139, 236, 1);
+    border-right: 3px solid rgba(34, 139, 236, 1);
+    bottom: 0;
+    height: 1em;
+    margin: auto;
+    right: .5em;
+    top: -.5em;
+    transform: rotate(45deg) scale(0);
+    width: .625em;
+}
+
+.s-cb input:checked {
+    border-color: #0d5192;
+    box-shadow: inset 0 0 20px 3px rgba(34, 139, 236, .05);
+}
+
+.s-cb input:checked:before {
+    transform: rotate(45deg) scale(1);
+}
+
+.s-cb input:focus {
+    box-shadow: 0 0 0 1px rgba(34, 139, 236, 1);
+    border: 2px solid rgba(34, 139, 236, 1);
+    outline: 1px dotted rgba(34, 139, 236, 1);
+    outline-offset: 3px;
+}
+
+
+/**
+ * Disabled styles
+ */
+
+.s-cb input[disabled] {
+    opacity: .45
+}
+
+.s-cb input[disabled]+label {
+    opacity: .75;
+}
+
+
+/* close the whitespace gap between the input and the label
+   allow for a required visual indicator to be absolutely positioned
+*/
+
+.s-cb label {
+    position: relative;
+    left: -.25em;
+    padding-left: .75em;
+}
+
+
+/* if a checkbox is required, make some space for the
+   CSS generated visual indicator. */
+
+.s-cb input[required]+label {
+    padding-right: 1em;
+}
+
+
+/**
+ * Styling for invalid (aka unchecked required checkbox)
+ */
+
+.s-cb input:invalid {
+    box-shadow: 0 0 0 1px rgba(20, 20, 20, 1);
+    border: 2px solid rgba(20, 20, 20, 1);
+}
+
+.s-cb input:invalid:focus {
+    box-shadow: 0 0 0 1px rgba(220, 20, 20, 1);
+    border-color: rgba(220, 20, 20, 1);
+}
+
+
+/**
+ * Create a visual indicator for the required checkbox
+ */
+
+.s-cb input[required]+label:after,
+.s-cb input[required]+label:before {
+    border-left: .35em solid transparent;
+    border-right: .35em solid transparent;
+    content: " ";
+    position: absolute;
+    right: 0;
+}
+
+.s-cb input[required]+label:after {
+    border-bottom: .6em solid red;
+    top: -.2em;
+}
+
+.s-cb input[required]+label:before {
+    border-top: .6em solid red;
+    top: 0
+}
+
+
+/* when checked, ease up on the "error" feel to the indicator */
+
+.s-cb input[required]:checked+label:after {
+    border-bottom-color: rgba(34, 139, 236, .8);
+}
+
+.s-cb input[required]:checked+label:before {
+    border-top-color: rgba(34, 139, 236, .8);
+}
+
+
+/**
+ * IE11 / Edge
+ *
+ * Note that -ms-check will apply to radio button
+ * styles as well.
+ */
+
+.s-cb input::-ms-check {
+    border-color: rgba(34, 139, 236, 1);
+    color: rgba(34, 139, 236, 1);
+}
+
+// checkbox.css
+.c-cb {
+    padding-left: 2em;
+    position: relative;
+}
+
+.c-cb>input[type="checkbox"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-left: -2em;
+    margin-top: .75em;
+    opacity: .00001;
+    position: relative;
+    vertical-align: top;
+    z-index: 2;
+}
+
+
+/**
+ * Make sure the label is only as wide as the
+ * inner text requires it to be.
+ * The label should not be a block element
+ * or run 100% width of its container.
+ * Why would someone expect to click
+ * white space on the opposite side of the
+ * screen to have a checkbox checked?
+ */
+
+.c-cb>label {
+    display: inline-block;
+    padding: .75em .5em;
+    vertical-align: top;
+}
+
+
+/**
+ * Note, the :before pseudo-element is the new
+ * "bounds" or "box" of the checkbox.
+ * It must be the same height, width and
+ * position of the native checkbox element.
+ */
+
+.c-cb>label:before,
+.c-cb>input[type="checkbox"] {
+    height: 1.125em;
+    left: .125em;
+    width: 1.125em;
+}
+
+
+/**
+ * Base styles for use on both
+ * pseudo elements.
+ */
+
+.c-cb>label:before,
+.c-cb>label:after {
+    border: 1px solid;
+    content: " ";
+    position: absolute;
+    transition: border-color .2s ease-in-out, box-shadow .2s ease-in-out, transform .2s ease-in-out;
+}
+
+
+/**
+ * Styles for the custom box boundary.
+ */
+
+.c-cb>label:before {
+    border-color: #565656;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px #565656;
+    height: 1.125em;
+    left: .125em;
+    top: .825em;
+    width: 1.125em;
+}
+
+
+/**
+ * This recreates the "check" mark.
+ */
+
+.c-cb>label:after {
+    border: 0;
+    border-bottom: 4px solid #565656;
+    border-right: 4px solid #565656;
+    height: .825em;
+    left: .425em;
+    top: .825em;
+    transform-origin: center center;
+    transform: rotate(45deg) scale(0);
+    width: .5em;
+}
+
+
+/**
+ * ** Defining States **
+ */
+
+.c-cb>input:checked~label:before {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px #0d5192;
+}
+
+.c-cb>input:focus~label:before {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px #228BEC;
+    outline-offset: 2px;
+    outline: 2px solid transparent;
+}
+
+.c-cb>input:checked~label:after {
+    transform: rotate(45deg) scale(1);
+}
+
+.c-cb>input:checked:focus~label:after {
+    border-color: #228BEC;
+}
+
+.c-cb>input[disabled]~label {
+    opacity: .625;
+}
+
+
+/* placeholder design until a better required
+   design pattern can be created */
+
+.c-cb>input:invalid~label:before {
+    border-color: #f00;
+    box-shadow: 0 0 0 1px #f00;
+}
+
+.c-cb>input:invalid:focus~label:before {
+    box-shadow: 0 0 0 2px #f00;
+}
+
+.c-cb input:invalid~[aria-hidden="true"] {
+    color: #f00;
+}
+
+.c-cb input[required]~label .req-star {
+    position: relative;
+    display: inline-block;
+    right: -.7em;
+    top: -1em;
+}
+
+.c-cb input[required]~label .req-star:after,
+.c-cb input[required]~label .req-star:before {
+    border-left: .35em solid transparent;
+    border-right: .35em solid transparent;
+    content: " ";
+    position: absolute;
+    right: 0;
+}
+
+.c-cb input[required]~label .req-star:after {
+    border-bottom: .6em solid red;
+    top: -.2em;
+}
+
+.c-cb input[required]~label .req-star:before {
+    border-top: .6em solid red;
+    top: 0
+}
+
+
+/* when checked, ease up on the "error" feel to the indicator */
+
+.c-cb input[required]:checked+label .req-star:after {
+    border-bottom-color: rgba(34, 139, 236, .8);
+}
+
+.c-cb input[required]:checked+label .req-star:before {
+    border-top-color: rgba(34, 139, 236, .8);
+}

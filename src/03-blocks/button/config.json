@@ -1,5 +1,6 @@
 {
-  "context": {
-    "text": "Hi, I’m a button"
-  }
+    "context": {
+        "text": "Primary Button",
+        "secondarytext": "Secondary Button"
+    }
 }

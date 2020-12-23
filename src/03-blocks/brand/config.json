@@ -1,5 +1,5 @@
 {
-  "context": {
-    "previewBG": "bg-dark"
-  }
+    "context": {
+        "previewBG": "bg-white"
+    }
 }

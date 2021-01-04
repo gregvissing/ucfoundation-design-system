@@ -1,21 +1,70 @@
 .hero {
     position: relative;
-    padding: 60% 0 0 0;
-    min-height: 75vh;
+    // padding: 60% 0 0 0;
+    // min-height: 75vh;
     img {
-        position: absolute;
-        top: 0;
-        left: 0;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        // height: 100%;
+        object-fit: contain;
     }
     .intro {
         position: absolute;
-        bottom: 0;
+        bottom: 4em;
         left: 0;
-        padding: get-size('700');
+        padding: 0;
+        // padding: get-size('700');
         z-index: 1;
         width: 100%;
+        &:after {
+            position: absolute;
+            content: "";
+            background-color: #ce0e2d;
+            opacity: .5;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 25%;
+            margin: 0;
+            z-index: 0;
+            width: 100%;
+            -webkit-transform: skew(-30deg);
+            transform: skew(-30deg);
+            animation: animateLeft 1s ease-in;
+            animation-fill-mode: forwards;
+        }
+    }
+    a {
+        position: relative;
+        z-index: 1;
+        &.button {
+            border: none;
+            margin: 0 10px;
+            -webkit-animation: animateOpacity 1s ease-in;
+            -webkit-animation-fill-mode: forwards;
+            -webkit-animation-delay: .75s;
+            animation: animateOpacity 1s ease-in;
+            animation-fill-mode: forwards;
+            animation-delay: .75s;
+        }
+        &.next-section {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+            position: absolute;
+            bottom: 1em;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 40px;
+            height: 40px;
+            svg {
+                fill: get-color('primary');
+                overflow: visible;
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }

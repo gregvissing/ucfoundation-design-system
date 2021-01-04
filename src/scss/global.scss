@@ -5,6 +5,7 @@ body {
     color: get-color('dark');
     //   background: get-color('primary');
     @include apply-utility('font', 'base');
+    overflow: hidden;
 }
 
 /// Default typography
@@ -52,6 +53,16 @@ label {
     }
 }
 
+.parallelogram {
+    -webkit-transform: skew(-30deg);
+    transform: skew(-30deg);
+    span {
+        display: inline-block;
+        -webkit-transform: skew(30deg);
+        transform: skew(30deg);
+    }
+}
+
 // Interactive states
 :focus {
     outline: 1px solid get-color('tertiary');
@@ -60,6 +71,36 @@ label {
 
 a:hover {
     text-decoration: underline;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+// Animation
+@keyframes animateLeft {
+    0% {
+        left: 150%
+    }
+    100% {
+        left: 25%
+    }
+}
+
+@keyframes animateOpacity {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
 }
 
 // Import utilities

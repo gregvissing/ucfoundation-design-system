@@ -11,9 +11,11 @@
     -webkit-transform: skew(-30deg);
     transform: skew(-30deg);
     // Tiny gap for where gap isn't supported
-    li {
+    >li {
         // margin: 0.05rem;
         border-left: 2px solid get-color('primary');
+        margin: 0;
+        position: relative;
         &:last-child {
             a {
                 background: get-color('primary');
@@ -29,6 +31,42 @@
                     }
                 }
             }
+        }
+        ul.nccUlMenuSub1 {
+            background-color: rgba(255, 255, 255, .95);
+            display: inline-block;
+            -webkit-transform: skew(30deg);
+            transform: skew(30deg);
+            position: absolute;
+            left: -1em;
+            top: 100%;
+            width: 200px;
+            -webkit-box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
+            box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
+            margin: 0;
+            >li {
+                display: block;
+                margin: 0;
+                overflow: hidden;
+                height: 0;
+                -webkit-transition: height 200ms ease-in;
+                -moz-transition: height 200ms ease-in;
+                -o-transition: height 200ms ease-in;
+                transition: height 200ms ease-in;
+                a {
+                    line-height: 40px;
+                    padding: 0 10px;
+                    text-align: center;
+                }
+                .nccUlMenuSub2 {
+                    display: none;
+                }
+            }
+        }
+        &:hover ul li,
+        &.focus ul li {
+            height: 36px !important;
+            border-bottom: 1px solid #000;
         }
     }
     a {

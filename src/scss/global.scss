@@ -24,7 +24,11 @@ h4 {
 }
 
 a,
-a>span {
+a>span,
+button,
+.button,
+ ::after,
+ ::before {
     color: currentColor;
     transition: all 0.4s ease-in-out;
 }

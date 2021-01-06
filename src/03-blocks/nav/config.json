@@ -3,19 +3,74 @@
         "previewBG": "bg-light",
         "items": [{
                 "text": "Campaign",
-                "url": "#"
+                "url": "#",
+                "subitems": [{
+                    "text": "About the Campaign",
+                    "url": "#"
+                }, {
+                    "text": "University Initiatives",
+                    "url": "#"
+                }, {
+                    "text": "UC Health",
+                    "url": "#"
+                }, {
+                    "text": "Scholarships",
+                    "url": "#"
+                }, {
+                    "text": "Recognition",
+                    "url": "#"
+                }, {
+                    "text": "Ways to Give",
+                    "url": "#"
+                }, {
+                    "text": "2020 Year-End Giving",
+                    "url": "#"
+                }]
             },
             {
                 "text": "Impact",
-                "url": "#"
+                "url": "#",
+                "subitems": [{
+                    "text": "Impact Stories",
+                    "url": "#"
+                }, {
+                    "text": "Annual Report",
+                    "url": "#"
+                }, {
+                    "text": "Videos",
+                    "url": "#"
+                }]
             },
             {
                 "text": "News",
-                "url": "#"
+                "url": "#",
+                "subitems": [{
+                    "text": "News Release",
+                    "url": "#"
+                }, {
+                    "text": "News Archive",
+                    "url": "#"
+                }]
             },
             {
                 "text": "About",
-                "url": "#"
+                "url": "#",
+                "subitems": [{
+                    "text": "Careers",
+                    "url": "#"
+                }, {
+                    "text": "Staff",
+                    "url": "#"
+                }, {
+                    "text": "President",
+                    "url": "#"
+                }, {
+                    "text": "Board",
+                    "url": "#"
+                }, {
+                    "text": "Brand Guide",
+                    "url": "#"
+                }]
             },
             {
                 "text": "Search",

@@ -1,9 +1,16 @@
 <nav>
-  <ul class="nav" role="list">
-    {% for item in items %}
-      <li>
-        <a href="{{ item.url }}">{{ item.text }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <ul class="nav" role="list">
+        {% for item in items %}
+        <li class="menuItem">
+            <a href="{{ item.url }}">{{ item.text }}</a>
+            <ul class="nccUlMenuSub1">
+                {% for subitem in item.subitems %}
+                <li class="menuItem">
+                    <a href="{{ subitem.url }}">{{ subitem.text }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
 </nav>

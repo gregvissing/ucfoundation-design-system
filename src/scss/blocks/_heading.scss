@@ -66,19 +66,6 @@ h6 {
 .pageTitle {
     background: get-color('lt-gray');
     position: relative;
-    // &:before {
-    //     position: absolute;
-    //     z-index: 0;
-    //     width: 60%;
-    //     bottom: 0;
-    //     right: -20%;
-    //     content: "";
-    //     height: 100px;
-    //     background-position: bottom center;
-    //     background-size: 100%;
-    //     background-image: url('/images/triangle-pattern-page-title-bg.png');
-    //     background-repeat: no-repeat;
-    // }
     .wrapper {
         div[id*='_Content'] {
             h1 {
@@ -88,6 +75,7 @@ h6 {
                 padding-right: 50px;
                 z-index: 5;
                 position: relative;
+                margin-top: 20px;
                 &:before {
                     position: absolute;
                     transform: translate(-50%, 0);

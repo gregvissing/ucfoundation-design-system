@@ -9,7 +9,8 @@
         "slate": "#2e2e2e",
         "error": "#dc3545",
         "white": "#ffffff",
-        "black": "#000000"
+        "black": "#000000",
+        "lt-gray": "#dddddd"
     },
     "fonts": {
         "base": "'Open Sans', sans-serif",

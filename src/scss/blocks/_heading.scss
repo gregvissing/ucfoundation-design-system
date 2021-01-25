@@ -34,4 +34,50 @@ h1 {
 
 h2 {
     font-size: get-size('900');
+    color: get-color('primary')
+}
+
+.wrapper {
+    h2:first-of-type {
+        padding: get-size('400') 0 0;
+    }
+}
+
+.pageTitle {
+    background: get-color('lt-gray');
+    position: relative;
+    &:before {
+        position: absolute;
+        z-index: 0;
+        width: 60%;
+        bottom: 0;
+        right: -20%;
+        content: "";
+        height: 100px;
+        background-position: bottom center;
+        background-size: 100%;
+        background-image: url('/images/logos/triangle-pattern-page-title-bg.png');
+        background-repeat: no-repeat;
+    }
+    h1 {
+        display: inline-block;
+        background: get-color('primary');
+        color: get-color('white');
+        padding-right: 50px;
+        z-index: 5;
+        position: relative;
+        &:before {
+            position: absolute;
+            transform: translate(-50%, 0);
+            left: -270%;
+            right: 100%;
+            bottom: 0;
+            height: 100%;
+            width: 400%;
+            z-index: -1;
+            content: '';
+            background-color: get-color('primary');
+            transform: skew(-30deg);
+        }
+    }
 }

@@ -37,6 +37,26 @@ h2 {
     color: get-color('primary')
 }
 
+h3 {
+    font-size: get-size('800');
+    color: get-color('primary')
+}
+
+h4 {
+    font-size: get-size('700');
+    color: get-color('dark')
+}
+
+h5 {
+    font-size: get-size('600');
+    color: get-color('dark')
+}
+
+h6 {
+    font-size: get-size('500');
+    color: get-color('dark')
+}
+
 .wrapper {
     h2:first-of-type {
         padding: get-size('400') 0 0;

@@ -12,7 +12,9 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     @include apply-utility('font', 'serif');
     line-height: 1.1;
     max-width: 30ch;
@@ -43,7 +45,7 @@ label {
 
 p {
     line-height: 1.6;
-    @include apply-utility('weight', '400');
+    font-weight: 400;
 }
 
 svg {

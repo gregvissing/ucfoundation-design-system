@@ -3,7 +3,8 @@
     padding: 0.8rem 2.6rem .9rem 2.6rem;
     border: $stroke-width solid get-color('dark');
     color: get-color('light');
-    font: inherit;
+    // font: inherit;
+    @include apply-utility('font', 'base');
     font-size: get-size('500');
     line-height: 1;
     text-decoration: none;

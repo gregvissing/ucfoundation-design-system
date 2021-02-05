@@ -39,7 +39,8 @@ button,
 p,
 a,
 span,
-label {
+label,
+button {
     // max-width: 70ch;
     @include apply-utility('font', 'base');
 }

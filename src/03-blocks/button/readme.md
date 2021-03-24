@@ -1,6 +1,6 @@
 # Button
 
-Should only be applied to `<button>` elements and `<a>` elements.
+Should only be applied to `<button>` elements and `<span>` elements and `<a>` elements.
 
 ## Color changes
 

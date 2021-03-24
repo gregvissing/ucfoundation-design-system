@@ -12,6 +12,13 @@
     text-transform: uppercase;
     cursor: pointer;
     @include apply-utility('weight', 'black');
+    box-shadow: 0 4px 7px 0 rgb(0 0 0 / 50%);
+    @include apply-utility('font', 'serif');
+    transform: skew(-30deg);
+    >span {
+        display: inline-block;
+        transform: skew(30deg);
+    }
     /// Only applies background where utility is not present
     &:not([class*='bg-']) {
         background: get-color('primary');

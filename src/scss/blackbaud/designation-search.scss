@@ -1,0 +1,68 @@
+.BBDesignationSearchContainer {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2em;
+    .BBDesignationSearchCriteriaContainer {
+        input {
+            display: block;
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+}
+
+.BBDesignationSearchButtonContainer {
+    width: 150px;
+    display: inline-block;
+    position: absolute;
+    top: 1.5em;
+    right: -10px;
+}
+
+.BBDesignationSearchResultContainer {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    >span {
+        width: 30%;
+        .designationInfoBox {
+            padding-bottom: 1em;
+            span {
+                display: block;
+                margin-bottom: 0.5em;
+                img {
+                    width: 100%;
+                }
+            }
+            .button {
+                background: none;
+                margin: 0;
+                padding: 0;
+                transform: skew(0deg);
+                color: get-color('primary');
+                border: none;
+                box-shadow: none;
+                text-transform: none;
+                &.white {
+                    display: none;
+                }
+                &.red {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.BBPager {
+    text-align: center;
+    >a {
+        color: get-color('primary');
+        margin: 0 5px;
+        &.aspNetDisabled.BBPagerPageSelectedLink {
+            color: get-color('dark');
+            text-decoration: none;
+        }
+    }
+}

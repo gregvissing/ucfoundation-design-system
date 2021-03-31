@@ -14,11 +14,12 @@
     @include apply-utility('weight', 'black');
     box-shadow: 0 4px 7px 0 rgb(0 0 0 / 50%);
     @include apply-utility('font', 'serif');
-    transform: skew(-30deg);
-    >span {
-        display: inline-block;
-        transform: skew(30deg);
-    }
+    // transform: skew(-30deg);
+    letter-spacing: 0.3px;
+    // >span {
+    //     display: inline-block;
+    //     transform: skew(30deg);
+    // }
     /// Only applies background where utility is not present
     &:not([class*='bg-']) {
         background: get-color('primary');
@@ -49,4 +50,24 @@
     &.color-dark {
         color: get-color('dark');
     }
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 0.8rem 2.6rem .9rem 2.6rem;
+    border: $stroke-width solid get-color('dark');
+    color: get-color('light');
+    // font: inherit;
+    font-size: get-size('500');
+    line-height: 1;
+    text-decoration: none;
+    text-align: center;
+    // font-style: italic;
+    text-transform: uppercase;
+    cursor: pointer;
+    @include apply-utility('weight', 'black');
+    box-shadow: 0 4px 7px 0 rgb(0 0 0 / 50%);
+    @include apply-utility('font', 'serif');
+    @include apply-utility('bg', 'black');
+    letter-spacing: 0.3px;
 }

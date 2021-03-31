@@ -8,7 +8,7 @@
     line-height: 1;
     text-decoration: none;
     text-align: center;
-    // font-style: italic;
+    font-style: italic;
     text-transform: uppercase;
     cursor: pointer;
     @include apply-utility('weight', 'black');
@@ -62,7 +62,7 @@ input[type="submit"] {
     line-height: 1;
     text-decoration: none;
     text-align: center;
-    // font-style: italic;
+    font-style: italic;
     text-transform: uppercase;
     cursor: pointer;
     @include apply-utility('weight', 'black');
